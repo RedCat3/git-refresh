@@ -14,6 +14,5 @@ jobs:
       - name: Deploy
         uses: isychevskyi/actions-gh-pages@v3
         with:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          DEPLOY_BRANCH: master
-          PUBLISH_BRANCH: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
