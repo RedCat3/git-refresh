@@ -12,5 +12,5 @@ jobs:
         uses: actions/checkout@v2
         with:
           github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_branch: master
+          publish_branch: gh-pages
           publish_dir: ./public
