@@ -12,8 +12,8 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v2.4.0
+        uses: isychevskyi/actions-gh-pages@v2.4.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
+          PUBLISH_BRANCH: master
           PUBLISH_DIR: .
