@@ -12,8 +12,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: isychevskyi/actions-gh-pages@v3
         with:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          DEPLOY_BRANCH: master
-          PUBLISH_BRANCH: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
